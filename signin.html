@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign In</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .container h2 {
+      margin-bottom: 20px;
+    }
+
+    .container input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .container button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .container button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <a href="home.html">Home</a>
+        <a href="signin.html">User Sign In</a>
+      </header>
+  <div class="container">
+    <h2>Sign In</h2>
+    <form method="post" action="inmes.jsp">
+      <input type="text" name="username" placeholder="Username (Phone Number)">
+      <input type="password" name="password" placeholder="Password">
+      <button type="submit">Sign In</button>
+    </form>
+    <p>Don't have an account? <a href="usignup.html">Create one</a></p>
+  </div>
+</body>
+</html>

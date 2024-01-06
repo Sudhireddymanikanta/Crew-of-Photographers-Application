@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .container h2 {
+      margin-bottom: 20px;
+    }
+
+    .container input{
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="home.html">Home</a>
+    <a href="psignup.html">Photographer Entry</a>
+  </header>
+  <div class="container">
+    <h2>Please Enter Your Details Below</h2>
+    <form method="POST" action="request.jsp">
+      <input type="text" name="name" placeholder="Photographer Name" required>
+      <input type="tel" name="mobile_number" placeholder="Mobile Number" required>
+      <input type="tel" name="Alternate mobile_number" placeholder="Alternate Mobile Number(optional)">
+      <input type="email" name="email" placeholder="Email ID" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+      <input type="text" name="address" placeholder="Address" required>
+      <input type="submit" name="submit" value="Done">
+    </form>
+  </div>
+</body>
+</html>
